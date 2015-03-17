@@ -1,0 +1,49 @@
+#title {
+	margin-bottom: 0px; 
+}
+
+#team {
+	margin-bottom: 20px;	
+}
+
+#container {
+	overflow: auto;
+
+}
+
+#img {
+	float: left;
+	width: 100%;
+	margin-right: 50px;	
+	
+}
+
+#project_img {
+	max-width: 200%;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	margin-left: 0px;	
+	margin-right: 0px;
+}
+
+#description {
+
+}
+
+#links {
+	float: right;
+	right: 0px;
+	margin-right: 50px;
+	padding: 10px;
+	background-color: cyan;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #2AABE1;
+	border-radius: 5px;
+}
+
+.link {
+
+
+}
