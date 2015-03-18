@@ -1,6 +1,10 @@
 
 body > header {
-    font-size: 4rem;
+    font-size: 5rem;
+}
+
+body > header > h1 {
+    text-shadow: 0 0 .2rem white, 0 0 .4rem white, 0 0 .6rem white, 0 0 .8rem white;
 }
 
 body > header > h1,
