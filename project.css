@@ -14,8 +14,12 @@ body > header > p {
 
 body > section {
     display: inline-block;
-    width: calc(49% - 4rem);
+    width: 46%;
     vertical-align: top;
+}
+
+body > section[name="left"] {
+    margin-left: 4%;
 }
 
 body > section[name="left"]  > img {
