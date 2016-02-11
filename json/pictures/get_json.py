@@ -1,6 +1,6 @@
 # coding=utf-8
 
-# usage [script.py] > pictures.json
+# usage python [script.py] > pictures.json
 
 import json
 import urllib2
