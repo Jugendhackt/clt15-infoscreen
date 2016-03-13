@@ -10,7 +10,7 @@ app.controller('MainController', ['$scope', function ($scope) {
         $scope.current_picture_id = 0;
         $scope.project = $scope.context.projects[0];
         $scope.project_id = 0;
-        setTimeout($scope.nextProject, 1000);
+        setTimeout($scope.nextProject, 100000);
         setTimeout($scope.nextImage, 10000);
     }
     $scope.nextImage = function() {
@@ -25,7 +25,7 @@ app.controller('MainController', ['$scope', function ($scope) {
         $scope.project_id = $scope.project_id % $scope.context.projects.length;
         $scope.project = $scope.context.projects[$scope.project_id];
         $scope.$apply();
-        setTimeout($scope.nextProject, 1000);
+        setTimeout($scope.nextProject, 100000);
     }
     $scope.init();
 
