@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ebisu";
+  src: url("ebisu.eot?#iefix") format("embedded-opentype"), url("ebisu.woff") format("woff"), url("ebisu.ttf") format("truetype");
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	color: #222222;
+    background: url(background.png)
+}
+
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Ebisu", Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+
+#description {
+    float: left;
+    width: 60%;
+}
+#people {
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+#person-image {
+    float: left;
+    width: 40%;
+}
+#person-name {
+    float: right;
+    width: 40%;
+}
+.person {
+  display: block; clear: both;
+  width: 100%;
+  padding-top: 10px;
+}
+#image {
+    height: 100vh;
+    width: 100%;
+    background-size:     cover !important;                      /* <------ */
+    background-repeat:   no-repeat !important;
+    background-position: center center !important;  
+    -webkit-filter: contrast(0.5);
+}
+
+.section {
+  position: absolute;
+    top: 30px; bottom: 0; left: 30px; right: 30px;
+    height: 80%;
+  color:white;
+}

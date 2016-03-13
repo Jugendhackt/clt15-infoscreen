@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="clt16">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="http://jugendhackt.de/wp-content/themes/ruboilerplate/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/project.css">
+
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body ng-controller="MainController">
+        <!---<header>
+            <h1>awearness</h1><p>Team awearness</p>
+        </header>
+
+        <section name="left">
+            <img src="aw.jpg" alt="aw"><img>
+        </section>
+
+        <section name="right">
+            <header>
+                <p>
+                    <em>Projekt URL</em>
+                    <a href="https://github.com/jugendhackt/awearness">github.com/jugendhackt/awearness</a>
+                </p>
+                <p>
+                    <em>Github</em>
+                    <a href="https://github.com/jugendhackt/awearness">jugendhackt/awearness</a></div>
+                </p>
+            </header>
+            <p id="description">
+                The wristband vibrates when surveillance cameras are nearby based on the GPS data from a bluetooth-connected Smartphone and data about camera positions in Berlin.
+            </p>
+            <p id="awards">
+                <em>awearness</em> wurde mit dem <em>Wish I'd Thought of That-Award</em> ausgezeichnet. 
+            </p>
+        </section>-->
+        
+        <div style="background: url({{current_picture.url}})" id="image"></div>
+            <section class="section" name="{{project.url}}">
+                <div id="location">{{project.location}}</div>
+                <div id="title">
+                    <h1>{{project.title}}</h1>
+                </div>
+                <div id="description">
+{{project.description}}
+                </div>
+                <div id="people">
+                    <div class="person" ng-repeat="person in project.people">
+                        <div id="person-image">
+                        <img height=48 width=48 ng-if="person.contains('github')" src="http://github.com/{{person.split('/').last()}}.png">
+                        <img height=48 width=48 ng-if="person.contains('twitter')" src="https://twitter.com/{{person.split('/').last()}}/profile_image?size=normal">
+                        </div>
+                        <div id="person-name">{{person.split('/').last()}}</div>
+                    </div>
+                </div>
+
+            </section>
+                <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-ui-bootstrap.js"></script>
+        <script src="js/project.js"></script>
+    </body>
+</html>
