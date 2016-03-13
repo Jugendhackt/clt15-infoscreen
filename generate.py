@@ -18,7 +18,7 @@ def create_index_html():
     context = {}
     with open("json/projekte/projekte.json") as projectfile:
         context["projects"] = json.load(projectfile)
-    with open("json/pictures/pictures.json") as projectfile:
+    with open("json/pictures/pictures_b.json") as projectfile:
         context["pictures"] = json.load(projectfile)
     with open("js/project.js") as tempfile:
         tmp = tempfile.read()
